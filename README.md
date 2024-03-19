@@ -54,6 +54,11 @@ Conceptos básicos de GDB
 
 Breakpoints
 
+¿Que es un  breakpoint?
+Se refiere a un punto específico en el código de un programa donde la ejecución se pausa temporalmente para permitir a los programadores examinar el estado del programa en ese momento. Los breakpoints son herramientas muy útiles para depurar código y encontrar errores.
+
+Cuando se establece un breakpoint en un entorno de desarrollo integrado (IDE) o en un depurador, el programa se detiene cuando alcanza esa línea de código específica. Esto permite a los desarrolladores inspeccionar las variables, ejecutar instrucciones paso a paso y examinar el flujo de ejecución del programa para identificar problemas y corregir errores. Una vez que se han resuelto los problemas, los breakpoints se pueden eliminar para permitir que el programa se ejecute normalmente.
+
 	</p>
 
 </pre>
