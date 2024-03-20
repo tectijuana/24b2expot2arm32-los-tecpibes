@@ -43,42 +43,67 @@ Fragoso Arellano Jorge Yahir		21211943
 
 Conceptos básicos de GDB
 <p align=center>
-	</p>
 
-</pre>
+<p align=left>
+Depuración: GDB es una herramienta utilizada para depurar programas. La depuración es el proceso de 
+identificar y corregir errores en un programa de computadora.
 
-<pre>
+Puntos de interrupción: GDB permite establecer puntos de interrupción en el código fuente del programa.
+Cuando el programa alcanza un punto de interrupción, se detiene y el usuario puede examinar su estado.
 
-	<p align=left>
-Depuración: GDB es una herramienta utilizada para depurar programas. La depuración es el proceso de identificar y corregir errores en un programa de computadora.
+Ejecución paso a paso: GDB permite ejecutar el programa paso a paso, 
+línea por línea. Esto es útil para observar el comportamiento 
+del programa y detectar posibles errores.
 
-Puntos de interrupción: GDB permite establecer puntos de interrupción en el código fuente del programa. Cuando el programa alcanza un punto de interrupción, se detiene y el usuario puede examinar su estado.
+Inspección de variables: Con GDB, 
+puedes inspeccionar el valor de las variables en 
+cualquier punto del programa durante la depuración.
 
-Ejecución paso a paso: GDB permite ejecutar el programa paso a paso, línea por línea. Esto es útil para observar el comportamiento del programa y detectar posibles errores.
+Backtrace (traza de llamadas): GDB proporciona una traza de llamadas, 
+también conocida como backtrace, que muestra la pila de llamadas de funciones 
+activas en un momento dado. Esto es útil para comprender cómo se llegó a un
+determinado punto en el programa.
 
-Inspección de variables: Con GDB, puedes inspeccionar el valor de las variables en cualquier punto del programa durante la depuración.
+Modificación de variables: Además de inspeccionar variables, 
+GDB también te permite modificar su valor durante la ejecución del programa.
+Esto puede ser útil para probar diferentes escenarios o corregir errores en tiempo real.
 
-Backtrace (traza de llamadas): GDB proporciona una traza de llamadas, también conocida como backtrace, que muestra la pila de llamadas de funciones activas en un momento dado. Esto es útil para comprender cómo se llegó a un determinado punto en el programa.
+Ayuda y documentación: GDB cuenta con una amplia documentación y una interfaz de ayuda integrada 
+que te permite acceder a información detallada sobre sus comandos y funcionalidades.
 
-Modificación de variables: Además de inspeccionar variables, GDB también te permite modificar su valor durante la ejecución del programa. Esto puede ser útil para probar diferentes escenarios o corregir errores en tiempo real.
+Uso avanzado: Además de estas funciones básicas, GDB ofrece muchas características avanzadas, 
+como el seguimiento de la memoria, el control de subprocesos y la depuración remota, que
+pueden ser útiles para tareas de depuración más complejas.
 
-Ayuda y documentación: GDB cuenta con una amplia documentación y una interfaz de ayuda integrada que te permite acceder a información detallada sobre sus comandos y funcionalidades.
+Watchpoints (puntos de observación): GDB permite establecer watchpoints en variables específicas.
+Cuando el valor de una variable cambia, GDB detiene la ejecución del programa, 
+lo que puede ser útil para detectar cuándo y dónde se modifican ciertos datos.
 
-Uso avanzado: Además de estas funciones básicas, GDB ofrece muchas características avanzadas, como el seguimiento de la memoria, el control de subprocesos y la depuración remota, que pueden ser útiles para tareas de depuración más complejas.
+Excepciones y señales: GDB puede manejar excepciones y señales, 
+como las generadas por errores de segmentación o violaciones de acceso. 
+te permite investigar la causa de estas excepciones y, en algunos casos, continuar la ejecución del programa después de su manejo.
 
-Watchpoints (puntos de observación): GDB permite establecer watchpoints en variables específicas. Cuando el valor de una variable cambia, GDB detiene la ejecución del programa, lo que puede ser útil para detectar cuándo y dónde se modifican ciertos datos.
+Ejecución remota: GDB puede depurar programas que se ejecutan en sistemas
+remotos a través de una conexión de red. Esto es útil cuando necesitas depurar un 
+programa que se ejecuta en un entorno diferente al tuyo.
 
-Excepciones y señales: GDB puede manejar excepciones y señales, como las generadas por errores de segmentación o violaciones de acceso. Te permite investigar la causa de estas excepciones y, en algunos casos, continuar la ejecución del programa después de su manejo.
+Archivo de comandos: GDB te permite crear un archivo de comandos con una secuencia de 
+instrucciones para ejecutar automáticamente durante la depuración. 
+Esto puede ahorrarte tiempo al automatizar tareas repetitivas o configurar el entorno de 
+depuración de forma específica.
 
-Ejecución remota: GDB puede depurar programas que se ejecutan en sistemas remotos a través de una conexión de red. Esto es útil cuando necesitas depurar un programa que se ejecuta en un entorno diferente al tuyo.
+Extensibilidad: GDB es altamente extensible y puede ser personalizado
+mediante el desarrollo de extensiones y scripts en lenguajes como Python.
+Esto te permite adaptar GDB a tus necesidades específicas o ampliar su funcionalidad según tus requerimientos.
 
-Archivo de comandos: GDB te permite crear un archivo de comandos con una secuencia de instrucciones para ejecutar automáticamente durante la depuración. Esto puede ahorrarte tiempo al automatizar tareas repetitivas o configurar el entorno de depuración de forma específica.
+Depuración de programas multi-hilo: GDB es capaz de depurar
+programas que hacen uso de múltiples hilos de ejecución de manera concurrente. 
+Puedes inspeccionar y controlar cada hilo individualmente para entender mejor el c
+omportamiento del programa.
 
-Extensibilidad: GDB es altamente extensible y puede ser personalizado mediante el desarrollo de extensiones y scripts en lenguajes como Python. Esto te permite adaptar GDB a tus necesidades específicas o ampliar su funcionalidad según tus requerimientos.
-
-Depuración de programas multi-hilo: GDB es capaz de depurar programas que hacen uso de múltiples hilos de ejecución de manera concurrente. Puedes inspeccionar y controlar cada hilo individualmente para entender mejor el comportamiento del programa.
-
-Interfaz gráfica: Aunque GDB suele utilizarse a través de una interfaz de línea de comandos, existen también interfaces gráficas como GDB GUI y DDD (Data Display Debugger) que proporcionan una experiencia de depuración visual más amigable.
+Interfaz gráfica: Aunque GDB suele utilizarse a través de una interfaz de línea de comandos,
+existen también interfaces gráficas como GDB GUI y DDD (Data Display Debugger) que 
+proporcionan una experiencia de depuración visual más amigable.
 
 
 Breakpoints
