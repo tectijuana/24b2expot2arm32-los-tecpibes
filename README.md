@@ -124,10 +124,67 @@ Por ejemplo, olvidar eliminar un breakpoint después de su uso puede causar prob
 </pre>
 <pre>
 
-	<p align=left>
+	
 
-
+<p align=center>
 Inspección de registros y memoria
+	
+<p align=left>
+La inspección de registros y memoria en ensamblador con GDB es una habilidad fundamental para depurar programas a nivel de bajo nivel. 
+
+<p align=center>
+Registros:
+	<p align=left>
+Los registros son ubicaciones de almacenamiento de datos dentro de la CPU. Cada registro tiene un propósito específico y se utiliza
+para realizar operaciones aritméticas, almacenar valores temporales y controlar el flujo del programa.
+Algunos registros comunes en arquitecturas x86 incluyen EAX, EBX, ECX, EDX, ESP, EBP, ESI y EDI.
+Puedes inspeccionar los valores de estos registros utilizando comandos como info registers o simplemente escribiendo el nombre del 
+registro en GDB.
+<p align=center>
+Memoria:
+		<p align=left>
+La memoria es donde se almacenan los datos y las instrucciones del programa. En ensamblador, a menudo trabajamos con la memoria
+utilizando direcciones de memoria. Puedes inspeccionar la memoria utilizando el comando x seguido de un formato y una dirección.
+Por ejemplo, x/10x $esp muestra los primeros 10 valores en la pila (stack) a partir del puntero de pila actual ($esp).
+<p align=center>
+Inspeccion de registos y memoria
+<p align=left>
+La inspección de registros y memoria en este contexto implica observar los valores almacenados en los registros del procesador en
+un momento dado durante la ejecución del programa, así como examinar los contenidos de las direcciones de memoria donde se almacenan
+datos o instrucciones.
+
+Por ejemplo, al depurar un programa escrito en ensamblador con GDB, podrías querer examinar los registros para ver cómo cambian
+durante la ejecución del programa, o podrías querer inspeccionar la memoria para ver los valores almacenados en ciertas ubicaciones de memoria.
+
+En resumen, al trabajar con ensamblador y GDB, la inspección de registros y memoria te permite comprender cómo se comporta tu programa
+a nivel de procesador y cómo interactúa con la memoria del sistema durante la ejecución. Esto es esencial para depurar y entender el
+comportamiento de programas de bajo nivel.
+<p align=center>
+Como realizar la inspección
+<p align=left>
+Para realizar la inspección de registros y memoria en ensamblador con GDB, se siguen los siguientes estos pasos:
+
+1.- Abrir el programa en GDB:
+Abre una terminal y ejecuta gdb seguido del nombre del programa que deseas depurar. Por ejemplo: gdb mi_programa.
+2.- Cargar el programa:
+En GDB, carga el programa ejecutando file mi_programa.
+3.- Iniciar la depuración:
+Ejecuta run o start para comenzar la ejecución del programa.
+4.- Examinar registros:
+Utiliza el comando info registers para mostrar los valores dentro de los registros. Esto te proporcionará información sobre los registros
+actuales y sus contenidos.
+5.- Inspeccionar memoria:
+Para examinar la memoria, utiliza el comando x seguido de un formato y una dirección. Por ejemplo:
+x/10x $esp: Muestra los primeros 10 valores en la pila (stack) a partir del puntero de pila actual ($esp).
+x/20i $rip: Muestra las primeras 20 instrucciones a partir del puntero de instrucción ($rip).
+6.- Interpretar los valores en memoria:
+Los valores hexadecimales que obtienes al inspeccionar la memoria representan los datos almacenados en esas direcciones.
+La interpretación depende del contexto del programa y la arquitectura. Por ejemplo:
+Si encuentras una dirección que parece ser una función, puedes seguir esa dirección para ver qué instrucciones contiene.
+Si ves valores que parecen punteros, puedes seguirlos para ver qué datos apuntan.
+7.- Depurar y ajustar:
+Utiliza esta información para depurar problemas en tu programa. Puedes establecer puntos de interrupción, modificar valores de registros o 
+inspeccionar la memoria en momentos clave.
 
 	</p>
 
