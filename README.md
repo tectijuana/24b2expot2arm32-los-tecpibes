@@ -36,12 +36,12 @@ Fragoso Arellano Jorge Yahir		21211943
 
 </pre>
 
+## Conceptos básicos de GDB
+
 <pre>
 
 	<p align=left>
 
-
-Conceptos básicos de GDB
 <p align=center>
 
 <p align=left>
@@ -106,10 +106,10 @@ existen también interfaces gráficas como GDB GUI y DDD (Data Display Debugger)
 proporcionan una experiencia de depuración visual más amigable.
 
 </pre>
+
+## Breakpoints
 <pre>
 
-
-Breakpoints
 
 <p align=center>
 ¿Que es un  breakpoint?
@@ -185,12 +185,12 @@ problemas en la ejecución del programa en producción.
 	</p>
 
 </pre>
+
+## Inspección de registros y memoria
+
 <pre>
 
-	
-
 <p align=center>
-Inspección de registros y memoria
 	
 <p align=left>
 La inspección de registros y memoria en ensamblador con GDB es una habilidad fundamental para depurar programas a nivel de bajo nivel. 
@@ -252,12 +252,12 @@ inspeccionar la memoria en momentos clave.
 	</p>
 
 </pre>
+
+## Seguimiento de ejecución
+
 <pre>
 
 	<p align=left>
-
-
-Seguimiento de ejecución
 
 <p align=center>
 ¿Que es seguimiento de ejecución?
