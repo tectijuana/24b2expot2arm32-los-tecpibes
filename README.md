@@ -142,7 +142,8 @@ Esto es útil para detectar valores inesperados o incorrectos que pueden estar c
 
 Entender el comportamiento del código:
 Los breakpoints también se pueden utilizar para comprender cómo funciona un programa. Al detener la ejecución 
-en diferentes puntos, los desarrolladores pueden ver qué partes del código se ejecutan en diferentes situaciones y cómo interactúan entre sí.
+en diferentes puntos, los desarrolladores pueden ver qué partes del código se ejecutan en diferentes situaciones 
+y cómo interactúan entre sí.
 
 <p align=center>
 Ventajas
