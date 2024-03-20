@@ -149,32 +149,37 @@ y cómo interactúan entre sí.
 Ventajas
 <p align=left>
 Facilita la depuración: 
-Los breakpoints permiten detener la ejecución del programa en puntos específicos, lo que facilita la identificación 
-y corrección de errores al proporcionar a los desarrolladores la capacidad de examinar el estado del programa en ese momento.
+Los breakpoints permiten detener la ejecución del programa en puntos específicos, lo que facilita la
+identificación y corrección de errores al proporcionar a los desarrolladores la capacidad de examinar 
+el estado del programa en ese momento.
 
 Ahorra tiempo:
-Al detener la ejecución en puntos críticos del código, los desarrolladores pueden ahorrar tiempo al no tener que 
-revisar todo el programa en busca de errores. Esto acelera el proceso de depuración y ayuda a resolver problemas de manera más eficiente.
+Al detener la ejecución en puntos críticos del código, los desarrolladores pueden ahorrar tiempo al 
+no tener que revisar todo el programa en busca de errores. Esto acelera el proceso de depuración y 
+ayuda a resolver problemas de manera más eficiente.
 	
 Permite el análisis detallado:
-Los breakpoints ofrecen a los desarrolladores la capacidad de inspeccionar variables, ejecutar instrucciones paso a paso y analizar 
-el flujo de ejecución del programa. Esto les permite comprender mejor cómo funciona el código y cómo interactúan diferentes partes del programa.
+Los breakpoints ofrecen a los desarrolladores la capacidad de inspeccionar variables, ejecutar instrucciones 
+paso a paso y analizar el flujo de ejecución del programa. 
+Esto les permite comprender mejor cómo funciona el código y cómo interactúan diferentes partes del programa.
 	
 
 <p align=center>
 Desventajas
 <p align=left>
 Puede ralentizar la ejecución:
-El uso excesivo de breakpoints puede ralentizar la ejecución del programa, especialmente en aplicaciones grandes o complejas. 
-Esto puede afectar negativamente la productividad del desarrollador y el rendimiento del programa.
+El uso excesivo de breakpoints puede ralentizar la ejecución del programa, especialmente en aplicaciones 
+grandes o complejas. 
+Esto también puede afectar negativamente la productividad del desarrollador y el rendimiento del programa.
 
 Posible dependencia excesiva:
-Algunos desarrolladores pueden volverse dependientes de los breakpoints para depurar su código, lo que puede dificultar el 
-desarrollo de habilidades de depuración más avanzadas y comprensión del código.
+Algunos desarrolladores pueden volverse dependientes de los breakpoints para depurar su código, lo que 
+puede dificultar el desarrollo de habilidades de depuración más avanzadas y comprensión del código.
 
 Riesgo de introducir nuevos errores:
-Al agregar o modificar breakpoints durante el proceso de depuración, existe el riesgo de introducir nuevos errores en el código. 
-Por ejemplo, olvidar eliminar un breakpoint después de su uso puede causar problemas en la ejecución del programa en producción.
+Al agregar o modificar breakpoints durante el proceso de depuración, existe el riesgo de introducir 
+nuevos errores en el código; como el olvidar eliminar un breakpoint después de su uso puede causar 
+problemas en la ejecución del programa en producción.
 
 
 	</p>
