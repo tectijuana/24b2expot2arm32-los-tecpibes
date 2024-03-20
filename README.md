@@ -37,12 +37,7 @@ Fragoso Arellano Jorge Yahir		21211943
 </pre>
 
 ## Conceptos básicos de GDB
-
 <pre>
-
-	<p align=left>
-
-<p align=center>
 
 <p align=left>
 Depuración: GDB es una herramienta utilizada para depurar programas. La depuración es el proceso de 
