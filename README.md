@@ -105,6 +105,9 @@ Interfaz gráfica: Aunque GDB suele utilizarse a través de una interfaz de lín
 existen también interfaces gráficas como GDB GUI y DDD (Data Display Debugger) que 
 proporcionan una experiencia de depuración visual más amigable.
 
+</pre>
+<pre>
+
 
 Breakpoints
 
