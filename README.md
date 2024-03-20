@@ -139,6 +139,71 @@ Inspección de registros y memoria
 
 Seguimiento de ejecución
 
+<p align=center>
+¿Que es seguimiento de ejecución?
+<p align=left>
+El "seguimiento de ejecución" es una técnica de depuración que permite observar y registrar los pasos que sigue un programa
+mientras se ejecuta, mostrando el flujo exacto de instrucciones en el procesador.
+
+<p align=center>
+¿Como se utiliza?
+<p align=left>
+Step y Next:
+Estos comandos son fundamentales en el seguimiento de ejecución. step ejecuta el programa línea por línea, 
+entrando en las funciones. next también ejecuta línea por línea, pero trata las funciones como una sola unidad de ejecución, no entrando en ellas.
+
+Watchpoints:
+Son puntos de interrupción basados en el cambio de valor de una expresión o variable. Si la variable o expresión cambia, el programa se detiene, 
+lo que permite ver en qué punto del código ocurre el cambio.
+
+Conditionals:
+Puedes establecer condiciones en los puntos de interrupción para que la ejecución se detenga solo cuando se cumpla una condición específica, 
+lo que ayuda a focalizar la depuración en situaciones de interés particular.
+
+Inspecting state:
+Durante el seguimiento de ejecución, puedes inspeccionar y modificar el estado del programa. Esto incluye ver y cambiar el valor de las variables, 
+examinar el contenido de la memoria, y ver el estado de los registros del procesador.
+
+Control de flujo:
+GDB permite controlar el flujo de ejecución del programa, lo que significa que puedes avanzar o retroceder en la ejecución,
+moverte a diferentes puntos del código, y ejecutar código condicionalmente.
+<p align=center>
+¿Que importancia tiene?
+<p align=left>
+El seguimiento de ejecución en GDB para ensamblador ARM es de vital importancia debido a varias razones.
+Aquí se detallan algunos de los aspectos más significativos:
+	
+	1. Comprensión detallada del flujo de ejecución
+	Permite a los desarrolladores entender exactamente cómo el procesador ARM ejecuta el programa, instrucción por instrucción.
+	Esto es crucial en la depuración de ensamblador, donde cada instrucción puede 
+	tener un impacto significativo en el comportamiento del sistema.
+	
+	2. Identificación precisa de errores
+	El seguimiento de ejecución facilita la localización de errores y comportamientos inesperados en el código. 
+	Por ejemplo, si un programa se comporta incorrectamente o se bloquea, el seguimiento puede 
+	ayudar a identificar la instrucción exacta o el conjunto de instrucciones que causan el problema.
+	
+	3. Optimización del rendimiento
+	Al depurar a nivel de ensamblador, los desarrolladores pueden identificar cuellos de botella y optimizar secciones críticas del código para mejorar el rendimiento.
+	Esto es especialmente importante en sistemas embebidos o en aplicaciones donde la eficiencia del procesador es crítica.
+	
+	4. Análisis de bajo nivel
+	El seguimiento de ejecución en GDB permite a los desarrolladores observar el comportamiento de los registros, 
+	la gestión de la memoria y la ejecución de las instrucciones a nivel de hardware. Esto es fundamental para el desarrollo de firmware,
+	drivers, y sistemas operativos donde la interacción directa con el hardware es necesaria.
+	
+	5. Educación y aprendizaje
+	Para quienes aprenden programación en ensamblador ARM o quieren entender cómo funciona el hardware a nivel de instrucciones, 
+	el seguimiento de ejecución es una herramienta educativa poderosa. Facilita la 	visualización de conceptos abstractos como el flujo de control,
+	manipulación de registros, y la ejecución de instrucciones.
+	
+	6. Resolución de problemas específicos de hardware
+	En el desarrollo de software para plataformas específicas de ARM, el seguimiento de ejecución ayuda a entender cómo el programa interactúa con el hardware específico.
+	Esto es esencial para diagnosticar problemas que pueden no ser evidentes a través de la depuración a nivel de código fuente.
+	
+	7. Automatización de pruebas
+	GDB puede ser utilizado en conjunto con scripts de automatización para ejecutar pruebas repetitivas,
+	permitiendo un seguimiento sistemático de la ejecución en diferentes escenarios de prueba.
 	</p>
 
 </pre>
