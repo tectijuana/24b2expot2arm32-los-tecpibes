@@ -322,3 +322,14 @@ Aquí se detallan algunos de los aspectos más significativos:
 	</p>
 
 </pre>
+Programa ejemplo
+```C
+#include <stdio.h>
+
+int main()
+{
+        int numerador = 10;
+        int denominador = 0;
+        float resultado = numerador/denominador;
+        printf("Resultado: %i", resultado);
+}
